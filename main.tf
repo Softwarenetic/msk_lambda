@@ -49,13 +49,13 @@ module "kafka" {
 
 
 module "s3_bucket" {
-  source = "cloudposse/s3-bucket/aws"
-  version = "0.49.0"
-  acl                      = "private"
-  enabled                  = true
-  user_enabled             = true
-  versioning_enabled       = false
-  name                     = "test"
-  stage                    = "test"
-  namespace                = "test"
+  source             = "cloudposse/s3-bucket/aws"
+  version            = "0.49.0"
+  acl                = "private"
+  enabled            = true
+  user_enabled       = true
+  versioning_enabled = false
+  name               = "test"
+  stage              = "test"
+  namespace          = "test"
 }

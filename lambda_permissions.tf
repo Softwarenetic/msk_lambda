@@ -1,6 +1,6 @@
 resource "aws_iam_role_policy" "lambda" {
-  name = "lambda-policy"
-  role = aws_iam_role.lambda.id
+  name   = "lambda-policy"
+  role   = aws_iam_role.lambda.id
   policy = <<EOF
 {
     "Version": "2012-10-17",

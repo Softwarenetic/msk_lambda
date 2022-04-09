@@ -7,11 +7,11 @@ resource "aws_lambda_function" "msk_to_s3" {
   runtime          = "python3.9"
   timeout          = 15
 
-   environment {
-     variables = {
-       BUCKET      = module.s3_bucket.bucket_id
-     }
-   }
+  environment {
+    variables = {
+      BUCKET = module.s3_bucket.bucket_id
+    }
+  }
 }
 
 data "archive_file" "lambda" {
